@@ -7,7 +7,7 @@ pragma solidity ^0.8.17; // This version or higher
     * Fantom, polygon, Avalanche
     */
 
-contract simpleStorage {
+contract SimpleStorage {
     // This gets initialized as zero
     // Creates a getter fuction. In solidity variables are just function calls. And yes, they cost gas
     // By default variable are set to internal
@@ -32,9 +32,9 @@ contract simpleStorage {
     }
 
     // These functions disallow both read and write on the blockchain
-    function add() public pure returns(uint256){
-        return (1 + 1);
-    }
+    // function add() public pure returns(uint256){
+    //     return (1 + 1);
+    // }
 
     /*
     * View and pure functions don't spend any gas fees. Because they don't change the blockchain (blue)
@@ -54,5 +54,3 @@ contract simpleStorage {
     }
 
 } 
-
-//0x85F05208B6C3613f42366dE27BAFBd4df40a8ceb
